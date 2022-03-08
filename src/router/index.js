@@ -22,6 +22,9 @@ import EventHandling from "../components/componentEvents/EventHandling.vue";
 import LifeCycleHooks from "../components/lifeCycleHooks/LifeCycleHooks.vue";
 import RoutingComp from '../components/Routing/RoutingComp.vue'
 import NotFound from '../components/Routing/NotFound.vue'
+import HomePage from '../components/NavigationGuard/HomePage.vue'
+import LoginPage from '../components/NavigationGuard/LoginPage.vue'
+import UserPage from '../components/NavigationGuard/UserPage.vue'
 
 // Defining the routes
 const routes = [
@@ -47,12 +50,21 @@ const routes = [
     {path: '/lifecyclehooks', name:'lifecyclehooks', component: LifeCycleHooks},
     {path: '/routing', name:'routing', component: RoutingComp},
     {path: '/provide-inject', name:'provideInject', component: ProvideInjection},
-    {path: '/:catchAll(.*)', name:'NotFound', component: NotFound}    
+    {path: '/:catchAll(.*)', name:'NotFound', component: NotFound},
+    {path: '/home', name: 'navigationHomePage', component: HomePage},
+    {path: '/login', name: 'loginPage', component: LoginPage},
+    {path: '/user', name: 'userPage', component: UserPage}
 ]
 // Creating router
 const router = createRouter({
     history: createWebHistory(process.env.BASE_URL),
     routes
   })
+
+//   using router guard globally 
+router.beforeEach((to,from)=>{
+    console.log('before navigation')
+    console.log(to,from)
+})
   export default router 
   

@@ -1,15 +1,18 @@
 <template>
   <div>
+
       <button @click="clickHandler">click</button>
+      <event-bus/>
   </div>
 </template>
 
 <script>
 // import { isMemberExpressionBrowser } from "@vue/compiler-core";
 
-
+import EventBus from "./EventBus.vue"
 
 export default {
+    components: {EventBus},
     data(){
         return {
 
