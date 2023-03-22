@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import AboutUs from './components/AboutUs.vue';
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
   
-  <HelloWorld msg="Vite + Vue" />
+  <Navigation/>
   <RouterView></RouterView>
 </template>
 
