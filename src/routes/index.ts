@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import HelloWorld from '../components/HelloWorld.vue';
-import Contact from '../components/Contact.vue';
+import Projects from '../components/Projects.vue';
 import AboutUs from '../components/AboutUs.vue';
 import LoginForm from '../components/LoginForm.vue';
 
@@ -10,7 +10,7 @@ import LoginForm from '../components/LoginForm.vue';
 const routes = [
     { path: '/', component: HelloWorld },
     { path: '/aboutus',component: AboutUs },
-    { path: '/contact',component: Contact },
+    { path: '/contact',component: Projects },
     { path: '/login',component: LoginForm }
 ]
 

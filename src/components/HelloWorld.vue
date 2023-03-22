@@ -2,10 +2,7 @@
 </script>
 
 <template>
-
-  <RouterLink to="/aboutus" >About Us</RouterLink>
-  <RouterLink to="/contact" > Contact Us</RouterLink>
-  <RouterLink to="/login" >About Us</RouterLink>
+<h1>this is home page</h1>
 </template>
 
 <style scoped>
