@@ -27,7 +27,7 @@
               <p class="mt-6 text-xl text-gray-500">
                 I am a front End Web developer, Exploring things in website developement and leading towords a perfection of creativity
               </p>
-              <button class="border border-gray-600 px-4 py-2 rounded-full mt-20 hover:bg-blue-500 hover:text-white">Download CV</button>
+              <button class="border border-gray-600 px-4 py-2 rounded-full mt-20 hover:bg-blue-500 hover:text-white"><a href="https://drive.google.com/file/d/1F9dB83FxAafyetxZ4aElOOdi9YFpvTGf/view?usp=share_link" target="_blank" rel="noopener noreferrer">Download CV</a></button>
             </div>
           </div>
         </div>
@@ -52,9 +52,11 @@
       </div>
     </div>
   </div>
+  <EducationDetails/>
 </template>
 
 <script setup lang="ts">
 import { ChevronRightIcon, StarIcon } from '@heroicons/vue/solid'
+import EducationDetails from './EducationDetails.vue';
 
 </script>

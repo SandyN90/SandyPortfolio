@@ -1,2 +1,2 @@
-import { BellIcon, XIcon, MenuIcon } from "@heroicons/vue/solid";
-export { BellIcon, XIcon, MenuIcon};
+import { BellIcon, XIcon, MenuIcon, StarIcon } from "@heroicons/vue/solid";
+export { BellIcon, XIcon, MenuIcon, StarIcon};
