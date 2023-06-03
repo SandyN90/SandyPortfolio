@@ -1,12 +1,14 @@
-<script setup lang="ts">
-import Navigation from './components/Navigation.vue'
-</script>
 
 <template>
-  
-  <Navigation/>
-  <RouterView></RouterView>
+  <div class="h-[5000px]">
+    <Navigation />
+    <RouterView></RouterView>
+  </div>
 </template>
+<script setup lang="ts">
+import Navigation from './components/Navigation.vue'
+
+</script>
 
 <style scoped>
 .logo {
