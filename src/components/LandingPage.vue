@@ -1,5 +1,5 @@
 <template>
-   <div class="ml-28">
+   <div class="ml-[16rem]">
     <HomePage />
     <AboutMe />
    </div>
