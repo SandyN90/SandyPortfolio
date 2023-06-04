@@ -78,10 +78,11 @@
         </div>
         <div class="md:pl-64 flex flex-col flex-1">
             <main>
-                <div class="py-6">
+                <div class="py-16">
                     <RouterView></RouterView>
                 </div>
             </main>
+            <Footer/>
         </div>
     </div>
 </template>
@@ -110,6 +111,7 @@ import {
     XIcon,
 } from '@heroicons/vue/outline'
 import { SearchIcon } from '@heroicons/vue/solid'
+import Footer from './Footer.vue';
 
 const navigation = [
     { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
