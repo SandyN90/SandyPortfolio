@@ -2,11 +2,13 @@
 <template>
   <div class="h-[5000px]">
     <Navigation />
+    <Sidebar/>
     <RouterView></RouterView>
   </div>
 </template>
 <script setup lang="ts">
 import Navigation from './components/Navigation.vue'
+import Sidebar from './components/Sidebar.vue';
 
 </script>
 
