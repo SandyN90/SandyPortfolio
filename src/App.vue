@@ -3,7 +3,6 @@
   <div class="h-[5000px]">
     <Navigation />
     <Sidebar/>
-    <RouterView></RouterView>
   </div>
 </template>
 <script setup lang="ts">
